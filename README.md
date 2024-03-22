@@ -1,6 +1,6 @@
 <br><br><br>
 <p align="center">
-  <a href="https://github.com/837477/async-pyfcm"><img src="https://github.com/837477/async-pyfcm/assets/37999795/0e85ad82-1e51-47ba-9488-2b7364cd8415"></a>
+  <a href="https://github.com/837477/async-pyfcm"><img src="https://github.com/837477/async-pyfcm/assets/37999795/249c6b6f-5f82-4b80-8c4f-e2c3311f1f15"></a>!
 </p>
 <p align="center">
     <em>From now on, easily send FCM (Firebase Cloud Messages) through Python asyncio!</em>
