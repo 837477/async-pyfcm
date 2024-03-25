@@ -1,6 +1,6 @@
 <br><br><br>
 <p align="center">
-  <a href="https://github.com/837477/async-pyfcm"><img src="https://github.com/837477/async-pyfcm/assets/37999795/249c6b6f-5f82-4b80-8c4f-e2c3311f1f15"></a>!
+  <a href="https://github.com/837477/async-pyfcm"><img src="https://github.com/837477/async-pyfcm/assets/37999795/249c6b6f-5f82-4b80-8c4f-e2c3311f1f15"></a>
 </p>
 <p align="center">
     <em>From now on, easily send FCM (Firebase Cloud Messages) through Python asyncio!</em>
@@ -24,23 +24,23 @@
 
 ---
 
-Using Python Asyncio, you can easily send FCM asynchronously.<br>
+You can now easily send asynchronous FCM messages.<br>
+`AsyncPyfcm` has the following features:
 
-* **First**: Supports sending FCM messages asynchronously
-* **Second**: Very convenient message sending interface
-* **Third**: All types of messages can be sent in FCM.
-* **Fourth**: Very Easy Way to Use Firebase Credentials (Json File / Json String / Dictionary).
-* **Fifth**: Supports automatic Access Token Refresh.
-* **Sixth**: Performance efficiency by maintaining asynchronous sessions.
-* **Seventh**: All exception cases of FCM can be controlled.
+- Support for sending Python Asyncio FCM messages
+- Supports all types of messages handled by FCM
+- Very convenient message sending interface
+- Easily handle Firebase credentials (Json File / Json String / Json Object[Dict])
+- Supports automatic access token refresh.
+- Increase performance efficiency by maintaining asynchronous sessions depending on the situation.
+- All exception situations in FCM can be controlled.
 
 
 ## Requirements
 
-Python 3.7+
-
 If you are planning to use FCM now, I think you have already studied FCM.<br>
-As you know, `google_application_credentials` is required to use FCM.
+As you know, `google_application_credentials` is required to use FCM.<br>
+**The existing Cloud Messaging API server key will be deprecated on June 20, 2024, so it is recommended to obtain a `google_application_credentials` key in the future.**
 
 To authenticate a service account and authorize it to access Firebase services, you must generate a private key file in JSON format.
 
@@ -76,7 +76,7 @@ from async_pyfcm import AsyncPyFCM
 # Google API's Access Token expires after a certain period of time.
 # Decide whether to automatically refresh the Access Token.
 
-# True (Default): Access Token is automatically refreshed every 30 minutes.
+# True (Default): The Access Token is checked immediately before sending the message, and is automatically renewed 30 minutes before expiration.
 # False: Access Token is not refreshed automatically.
 #   - In this case, the AsyncPyFCM object must be created again.
 #   - Suitable for short-term use.
