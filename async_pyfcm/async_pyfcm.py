@@ -34,7 +34,7 @@ class AsyncPyFCM(PyFCMAuth):
         Google API's Access Token expires after a certain period of time.
         Decide whether to automatically refresh the Access Token.
 
-        True (Default): Access Token is automatically refreshed every 30 minutes.
+        True (Default): The Access Token is checked immediately before sending the message, and is automatically renewed 30 minutes before expiration.
         False: Access Token is not refreshed automatically.
             - In this case, the AsyncPyFCM object must be created again.
             - Suitable for short-term use.
