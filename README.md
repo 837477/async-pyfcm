@@ -163,7 +163,7 @@ class Message(TypedDict):
 ```
 
 ## Contributing
-The following is a set of guidelines for contributing to sejong-univ-auth. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
+The following is a set of guidelines for contributing to `async-pyfcm`. These are mostly guidelines, not rules. Use your best judgment, and feel free to propose changes to this document in a pull request.
 
 1. Please create a branch in this format, **`<Issue Number>-<Some name>`**
 2. Open a terminal and navigate to your project path. And enter this.
